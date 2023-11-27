@@ -1,0 +1,149 @@
+/* Importações de arquivos e fontes */
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo global do corpo do documento */
+body {
+    background: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilo da seção de banner */
+.banner {
+    padding: 56px 0 80px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)),
+                url('../images/banner.png') no-repeat center / cover;
+}
+
+/* Estilo da imagem dentro do banner */
+.banner .logo img {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+/* Estilo do título principal */
+h1 {
+    font: 40px/47px 'Raleway', sans-serif;
+    font-weight: 900;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Estilo do botão */
+button {
+    width: 326px;
+    height: 57px;
+    border: 2px solid #33A8DB;
+    padding: 16px 32px;
+    font-size: 16px;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    letter-spacing: 2px;
+}
+
+/* Estilo do subtítulo */
+h2 {
+    padding-top: 50px;
+    font: 32px/1 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+/* Estilo global para texto, links e elementos semelhantes */
+h1, button, h2, span, a {
+    color: #33A8DB;
+    text-transform: uppercase;
+}
+
+/* Estilo para parágrafos */
+p {
+    font-weight: 400;
+}
+
+/* Estilo específico para o parágrafo após um título h1 */
+h1 + p {
+    font-size: 20px;
+    width: 514px;
+    height: 46px;
+    margin: 24px auto;
+    text-align: center;
+}
+
+/* Estilo específico para o parágrafo após um título h2 */
+h2 + p {
+    font-size: 16px;
+    width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* Estilo para as seções e o rodapé */
+.banner, #course-content, #transform-world, #professional-challenges, footer {
+    border-bottom: 1px solid #33A8DB;
+    text-align: center;
+}
+
+/* Estilo para a seção "transform-world" e o rodapé */
+#transform-world{
+    height: 300px;
+}
+
+/* Estilo para o módulo */
+.module {
+    box-sizing: border-box;
+    border: 2px solid #33A8DB;
+    margin: 20px auto;
+    width: 535px;
+    height: 51px;
+    padding: 16px 0;
+    background-color: #252525;
+    border-radius: 57px;
+}
+
+/* Estilo para o conteúdo do curso */
+#course-content {
+    padding-bottom: 50px;
+}
+
+/* Estilo específico para o parágrafo dentro de #transform-world */
+#transform-world > p {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 900;
+    width: 275px;
+    height: 200px;
+    margin: 80px 100px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+/* Estilo para a seção #transform-world */
+#transform-world {
+    padding: 50px;
+    background: transparent url('../images/woman-code.png') center/cover fixed;
+}
+
+#professional-challenges > p{
+    width: 792px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#professional-challenges{
+    height: 668px;
+}
+
+footer{
+    box-sizing: border-box;
+    height: 170px;
+    padding: 45px 0;
+    background: linear-gradient(to bottom, #000000, #011118);
+}
